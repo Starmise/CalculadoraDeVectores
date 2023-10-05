@@ -191,8 +191,7 @@ void App::Vector3Options()
 
 		case 6:
 			vector3.crossProduct(vector3rd);
-			result = vector3.crossProduct(vector3rd);
-			cout << "El resultado del producto cruz es: " << result << endl;
+			printVector3();
 			break;
 
 		case 7:

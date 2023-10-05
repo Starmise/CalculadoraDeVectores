@@ -11,7 +11,7 @@ public:
 
 	void dotProduct(float _value);
 
-	float crossProduct(Vector3 _vec);
+	void crossProduct(Vector3 _vec);
 
 	void Addition(Vector3 _vec);
 

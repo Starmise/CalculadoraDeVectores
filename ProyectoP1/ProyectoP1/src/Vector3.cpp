@@ -23,9 +23,11 @@ void Vector3::dotProduct(float _value)
     resultz = z * _value;
 }
 
-float Vector3::crossProduct(Vector3 _vec)
+void Vector3::crossProduct(Vector3 _vec)
 {
-    return ((y * _vec.z) - (z * _vec.y), (z * _vec.x) - (x * _vec.z), (x * _vec.y) - (y * _vec.x));
+    resultx = (y * _vec.z) - (z * _vec.y);
+    resulty = (z * _vec.x) - (x * _vec.z); 
+    resultz = (x * _vec.y) - (y * _vec.x);
 }
 
 void Vector3::Addition(Vector3 _vec)
