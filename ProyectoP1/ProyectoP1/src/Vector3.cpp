@@ -16,11 +16,12 @@ void Vector3::setVector3(float _x, float _y, float _z)
     z = _z;
 }
 
-void Vector3::dotProduct(float _value)
+void Vector3::dotProduct(Vector3 _vec)
 {
-    resultx = x * _value;
-    resulty = y * _value;
-    resultz = z * _value;
+    resultx = x * _vec.x;
+    resulty = y * _vec.y;
+    resultz = z * _vec.z;
+    resultx = resultx + resulty + resultz;
 }
 
 void Vector3::crossProduct(Vector3 _vec)

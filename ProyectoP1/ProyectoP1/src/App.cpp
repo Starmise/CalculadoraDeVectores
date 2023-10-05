@@ -96,12 +96,8 @@ void App::Vector2Options()
 			break;
 
 		case 5:
-			float dotValor;
-			cout << "Ingresa el valor por el que deseas multiplicar: " << endl;
-			cin >> dotValor;
-
-			vector2.dotProduct(dotValor);
-			printVector2();
+			vector2.dotProduct(vector2nd);
+			cout << "El resultado del vector es: " << vector2.resultx << endl;
 			break;
 
 		case 6:
@@ -181,12 +177,8 @@ void App::Vector3Options()
 			break;
 
 		case 5:
-			float dotValor;
-			cout << "Ingresa el valor por el que deseas multiplicar: " << endl;
-			cin >> dotValor;
-
-			vector3.dotProduct(dotValor);
-			printVector3();
+			vector3.dotProduct(vector3rd);
+			cout << "El resultado del vector es: " << vector3.resultx << endl;
 			break;
 
 		case 6:
@@ -269,12 +261,8 @@ void App::Vector4Options()
 			break;
 
 		case 5:
-			float dotValor;
-			cout << "Ingresa el valor por el que deseas multiplicar: " << endl;
-			cin >> dotValor;
-
-			vector4.dotProduct(dotValor);
-			printVector4();
+			vector4.dotProduct(vector4th);
+			cout << "El resultado del vector es: " << vector4.resultx << endl;
 			break;
 
 		case 6:

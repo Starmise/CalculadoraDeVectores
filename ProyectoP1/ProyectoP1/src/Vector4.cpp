@@ -17,12 +17,13 @@ void Vector4::setVector4(float _x, float _y, float _z, float _w)
     w = _w;
 }
 
-void Vector4::dotProduct(float _value)
+void Vector4::dotProduct(Vector4 _vec)
 {
-    resultx = x * _value;
-    resulty = y * _value;
-    resultz = z * _value;
-    resultw = w * _value;
+    resultx = x * _vec.x;
+    resulty = y * _vec.y;
+    resultz = z * _vec.z;
+    resultw = w * _vec.w;
+    resultx = resultx + resulty + resultz + resultw;
 }
 
 void Vector4::crossProduct(Vector4 _vec)
@@ -80,7 +81,7 @@ void Vector4::Magnitude(Vector4 _vec)
     resulty = sqrt(y * _vec.y);
     resultz = sqrt(z * _vec.z);
     resultz = sqrt(w * _vec.w);
-    resultx = resultx + resulty + resultz; //Since the magnitude is a single value, the resulting four values are added together
+    resultx = resultx + resulty + resultz + resultw; //Since the magnitude is a single value, the resulting four values are added together
 }
 
 void Vector4::Normalize(Vector4 _vec)

@@ -16,10 +16,12 @@ void Vector2::setVector2(float _x, float _y)
     y = _y;
 }
 
-void Vector2::dotProduct(float _value)
+void Vector2::dotProduct(Vector2 _vec)
 {
-    resultx = x * _value;
-    resulty = y * _value;
+    resultx = x * _vec.x;
+    resulty = y * _vec.y;
+
+    resultx = resultx + resulty;
 }
 
 float Vector2::crossProduct(Vector2 _vec)

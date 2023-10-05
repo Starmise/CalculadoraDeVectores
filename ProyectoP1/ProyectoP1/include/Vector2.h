@@ -9,7 +9,7 @@ public:
 
 	void setVector2(float _x, float _y); //This function is used to obtain the values "x", "y".
 
-    void dotProduct(float _value);
+    void dotProduct(Vector2 _vec);
 
 	//_vec corresponds to a second vector
     float crossProduct(Vector2 _vec); //This is for calculating the cross product, also known as vector product

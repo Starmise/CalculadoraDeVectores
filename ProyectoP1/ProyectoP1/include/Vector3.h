@@ -9,7 +9,7 @@ public:
 
 	void setVector3(float _x, float _y, float _z); //This function is used to obtain the values "x", "y", "z".
 
-	void dotProduct(float _value);
+	void dotProduct(Vector3 _vec);
 
 	void crossProduct(Vector3 _vec);
 
