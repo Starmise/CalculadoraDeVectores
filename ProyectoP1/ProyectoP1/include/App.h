@@ -7,25 +7,18 @@ public:
 	App();
 	~App();
 
-	void adiVector();
-	void subVector();
-	void mulVector();
-	void divVector();
-
 	void menu();
 
-	int opc;
-	float resultX;
-	float resultY;
+	void Vector2Options();
+	void Vector3Options();
+	void Vector4Options();
+	
+	void printVector2();
+	void printVector3();
+	void printVector4();
+
+	int opc = 0;
 
 private:
 
 };
-
-App::App()
-{
-}
-
-App::~App()
-{
-}

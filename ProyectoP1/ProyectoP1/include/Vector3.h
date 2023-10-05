@@ -7,25 +7,32 @@ public:
 	Vector3();
 	~Vector3();
 
-    void setVector2();
+	void setVector3(float _x, float _y, float _z); //This function is used to obtain the values "x", "y", "z".
 
-    Vector3 dotProduct();
+	void dotProduct(float _value);
 
-    int crossProduct(Vector3 _vec);
+	float crossProduct(Vector3 _vec);
 
+	void Addition(Vector3 _vec);
 
-    int x;
-    int y;
-    int dotValor;
+	void Substraction(Vector3 _vec);
+
+	void Multiplication(Vector3 _vec);
+
+	void Division(Vector3 _vec); 
+
+	void Magnitude(Vector3 _vec);
+
+	void Normalize(Vector3 _vec);
+
+	float x;
+	float y;
+	float z;
+	float resultx;
+	float resulty;
+	float resultz; //Variable to get the results in z, because as a 3D vector
+    
 
 private:
 
 };
-
-Vector3::Vector3()
-{
-}
-
-Vector3::~Vector3()
-{
-}

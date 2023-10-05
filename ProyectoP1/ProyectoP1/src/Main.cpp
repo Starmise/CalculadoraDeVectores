@@ -1,14 +1,10 @@
 #include "Commons.h"
-#include "Vector2.h"
+#include "App.h"
 
 int main()
 {
-	/*Vector2 Vectors;
-	Vectors.setVector2();
-	Vectors.dotProduct();
+	App app;
+	app.menu(); //This object is in charge of starting the menu within "App" scripts.
 
-	Vector2 Vectorsnd;
-	Vectorsnd.setVector2();
-	int result = Vectorsnd.crossProduct(Vectorsnd);
-	cout << "Result = " << result << endl;*/
+	return 0;
 }
